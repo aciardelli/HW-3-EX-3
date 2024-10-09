@@ -111,6 +111,8 @@ SELECT *
                          FROM salesman
                          WHERE name = 'Paul Adam');
 
+/* Selects all information from orders where the salesman is Paul Adam. */
+
 
 /* 2. Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: *.'
 
@@ -120,7 +122,7 @@ SELECT *
                          FROM salesman
                          WHERE city = 'London');
 
-
+/* Selects all information from orders where the salesman is from London. */
 
 
 /* 3 (bonus). Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: */
@@ -133,3 +135,5 @@ SELECT ord_date,
                              FROM orders b
                              WHERE a.ord_date = b.ord_date);
 
+/* Returns order dates and purchase amounts where the total purchase on that day is greater than the maximum purchase amount on that same day plus 1000. */
+```
